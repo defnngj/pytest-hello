@@ -45,19 +45,19 @@ def test_case(hello):
 
 ## 运行:
 
-1. 设置非`test` 环境，跳过用例
+1. 不设置`--env`参数或设置参数值非`test`，跳过用例。
  
-```shell script
+```shell
 > pytest -vs test_sample.py --env dev
 
 collected 1 item
 test_sample.py::test_case SKIPPED (test requires env in ['test'])
 ```
 
-2. 设置`test` 环境，运行用例, 未设置`--hello` 参数
+2. 设置`--env`参数值为`test`， 同时未设置`--hello` 参数，默认值为“虫师”
  
-```shell script
-pytest -vs test_sample.py --env test
+```shell
+> pytest -vs test_sample.py --env test
 
 collected 1 item
 
@@ -65,9 +65,9 @@ test_sample.py::test_case hello: hello, 虫师
 PASSED
 ```
 
-2. 设置`test`环境，运行用例, 设置`--hello` 参数
- 
-```shell script
+3. 设置`--env`参数值为`test`, 同时设置`--hello` 参数值为`jack`。
+
+```shell
 > pytest -vs test_sample.py --env test --hello jack
 
 collected 1 item
