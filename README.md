@@ -4,10 +4,18 @@
 
 ## 安装
 
+* 下载安装
+
 ```shell script
 > git clone https://github.com/defnngj/pytest-hello
 > cd pytest-hello
 > python setup.py install
+```
+
+* pip在线安装
+
+```shell
+> pip install -U https://github.com/defnngj/pytest-hello.git@master
 ```
 
 ## 帮助
