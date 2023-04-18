@@ -9,7 +9,7 @@
 ```shell script
 > git clone https://github.com/defnngj/pytest-hello
 > cd pytest-hello
-> python setup.py install
+> pip install .
 ```
 
 * pip在线安装
