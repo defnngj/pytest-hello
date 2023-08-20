@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "pytest-hello"
-version = "0.0.1"
+version = "0.1.0"
 description = "pytest hello."
-authors = ["bugmaster <fnngj@126.com>"]
+authors = ["fnngj <fnngj@126.com>"]
 readme = "README.md"
 packages = [{include = "pytest_hello"}]
 
@@ -19,7 +19,7 @@ classifiers = [
 ]
 
 [tool.poetry.dependencies]
-python = "^3.7"
+python = "^3.11"
 pytest = "^7.3.0"
 
 
