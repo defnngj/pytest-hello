@@ -46,7 +46,7 @@ def pytest_addoption(parser: Any) -> None:
     """
     Add pytest option
     """
-    group = parser.getgroup("hello", "Hello")
+    group = parser.getgroup("hello", "pytest-hello")
     group.addoption(
         "--env",
         action="store",

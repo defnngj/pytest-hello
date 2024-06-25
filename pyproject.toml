@@ -1,27 +1,29 @@
 [tool.poetry]
 name = "pytest-hello"
 version = "0.1.0"
-description = "pytest hello."
+description = "pytest hello plugin."
 authors = ["fnngj <fnngj@126.com>"]
 readme = "README.md"
 packages = [{include = "pytest_hello"}]
 
 classifiers = [
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.7",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
     "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
     "Framework :: Pytest",
 ]
 
 [tool.poetry.dependencies]
-python = "^3.11"
-pytest = "^7.3.0"
+python = ">=3.8"
+pytest = "^8.2.2"
 
+[tool.poetry.plugins."pytest11"]
+hello = "pytest_hello.plugin"
 
 [build-system]
 requires = ["poetry-core"]
